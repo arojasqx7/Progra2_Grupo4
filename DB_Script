@@ -1,0 +1,73 @@
+create database PP2_Heladeria
+use PP2_Heladeria
+GO 
+CREATE TABLE Usuario(
+Id int identity(1,1) not null,
+Nombre varchar(30) not null,
+PrimerApellido varchar(30) not null,
+SegundoApellido varchar(30),
+Puesto varchar(30) not null,
+Telefono varchar(30) not null,
+Email char(50), 
+Username varchar(30) not null,
+Contrasena varchar(30) not null,
+RolId int not null,
+constraint pkIdUsuario primary key (Id),
+constraint fkRolId foreign key (RolId) references Rol(Id)
+)
+
+CREATE TABLE Rol(
+Id int identity(1,1), 
+NombreRol varchar(30) not null,
+constraint pkIdRol primary key (Id)
+)
+
+CREATE TABLE Producto(
+Id int identity(1,1), 
+Nombre varchar(50) not null,
+IdProveedor int not null,
+FechaVencimiento date not null,
+CantidadProducto int,
+IdSaborHelado int not null,
+IdTipoHelado int not null,
+Color varchar(50),
+PrecioCompra int not null,
+PrecioVenta int,
+Descripcion varchar(100),
+Foto varchar(200),
+constraint pkIdProducto primary key (Id),
+constraint fkIdProveedor foreign key (IdProveedor) references Proveedor(Id),
+constraint fkIdSaborHelado foreign key (IdSaborHelado) references Sabores(Id),
+constraint fkIdTiporHelado foreign key (IdTipoHelado) references TipoHelado(Id)
+)
+
+CREATE TABLE Sabores(
+Id int identity(1,1), 
+NombreSabor varchar(50) not null,
+Descripcion varchar(100),
+constraint pkIdSabor primary key (Id)
+)
+
+CREATE TABLE TipoHelado(
+Id int identity(1,1), 
+NombreTipo varchar(50) not null,
+Descripcion varchar(100),
+constraint pkIdTipo primary key (Id)
+)
+
+CREATE TABLE Proveedor(
+Id int identity(1,1), 
+Nombre varchar(50) not null,
+CedulaJuridica varchar(50),
+FechaInicio date,
+Telefono1 varchar(50) not null,
+Telefono2 varchar(50),
+Direccion varchar(80) not null,
+SitioWeb char(50),
+Email char(50),
+PersonaContacto varchar(50) not null,
+TipoProveeduria varchar(100),
+Comentarios varchar(100),
+Foto varchar(200),
+constraint pkIdProveedor primary key (Id)
+)
