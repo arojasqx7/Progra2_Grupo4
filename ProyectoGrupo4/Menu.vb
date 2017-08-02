@@ -1,4 +1,6 @@
 ﻿Public Class Menu
+    Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
+
 
     Private Sub btnInsertar_Click(sender As Object, e As EventArgs) Handles btnInsertar.Click
         Dim t_proveedor = New DataSet1.ProveedorDataTable()
