@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Menu
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,10 +20,13 @@ Partial Class Menu
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+
+        Me.Label20 = New System.Windows.Forms.Label()
+
         Me.Button5 = New System.Windows.Forms.Button()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
@@ -61,13 +64,22 @@ Partial Class Menu
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.MaskedTextBox2 = New System.Windows.Forms.MaskedTextBox()
+        Me.txtComentario = New System.Windows.Forms.TextBox()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.txtSitioWeb = New System.Windows.Forms.TextBox()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.txtCedulaJuridica = New System.Windows.Forms.TextBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.btnInsertar = New System.Windows.Forms.Button()
+        Me.txtDireccion = New System.Windows.Forms.TextBox()
+        Me.txtFecha = New System.Windows.Forms.MaskedTextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtPersonaContacto = New System.Windows.Forms.TextBox()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -77,6 +89,11 @@ Partial Class Menu
         Me.Button4 = New System.Windows.Forms.Button()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Label19 = New System.Windows.Forms.Label()
+
+        Me.lblSuccess = New System.Windows.Forms.Label()
+        Me.txtTel1 = New System.Windows.Forms.MaskedTextBox()
+        Me.txtTel2 = New System.Windows.Forms.MaskedTextBox()
+
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -99,11 +116,16 @@ Partial Class Menu
         Me.TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
+
+        Me.TabControl1.Size = New System.Drawing.Size(806, 496)
+
         Me.TabControl1.Size = New System.Drawing.Size(775, 528)
+
         Me.TabControl1.TabIndex = 0
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.Label20)
         Me.TabPage1.Controls.Add(Me.Button5)
         Me.TabPage1.Controls.Add(Me.TextBox14)
         Me.TabPage1.Controls.Add(Me.TextBox13)
@@ -126,16 +148,41 @@ Partial Class Menu
         Me.TabPage1.Controls.Add(Me.Label3)
         Me.TabPage1.Controls.Add(Me.Label2)
         Me.TabPage1.Controls.Add(Me.Label1)
+
+        Me.TabPage1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(798, 470)
+
         Me.TabPage1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TabPage1.Location = New System.Drawing.Point(4, 25)
         Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage1.Size = New System.Drawing.Size(767, 499)
+
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Agregar Producto"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
+
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(173, 326)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(45, 13)
+        Me.Label20.TabIndex = 22
+        Me.Label20.Text = "Label20"
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.DarkRed
+        Me.Button5.Location = New System.Drawing.Point(494, 342)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(64, 23)
+
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.Color.DarkRed
@@ -143,6 +190,7 @@ Partial Class Menu
         Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(85, 28)
+
         Me.Button5.TabIndex = 21
         Me.Button5.Text = "Salir"
         Me.Button5.TextAlign = System.Drawing.ContentAlignment.BottomLeft
@@ -322,8 +370,12 @@ Partial Class Menu
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+
+        Me.Label3.Location = New System.Drawing.Point(10, 82)
+
         Me.Label3.Location = New System.Drawing.Point(13, 101)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(132, 17)
         Me.Label3.TabIndex = 2
@@ -333,8 +385,12 @@ Partial Class Menu
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+
+        Me.Label2.Location = New System.Drawing.Point(14, 47)
+
         Me.Label2.Location = New System.Drawing.Point(19, 58)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(62, 17)
         Me.Label2.TabIndex = 1
@@ -362,8 +418,13 @@ Partial Class Menu
         Me.TabPage2.Location = New System.Drawing.Point(4, 25)
         Me.TabPage2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage2.Name = "TabPage2"
+
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(798, 470)
+
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage2.Size = New System.Drawing.Size(767, 499)
+
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Ver Lista Productos"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -372,10 +433,16 @@ Partial Class Menu
         '
         Me.Button6.BackColor = System.Drawing.Color.DarkRed
         Me.Button6.ForeColor = System.Drawing.SystemColors.ControlLightLight
+
+        Me.Button6.Location = New System.Drawing.Point(494, 364)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(64, 23)
+
         Me.Button6.Location = New System.Drawing.Point(659, 448)
         Me.Button6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(85, 28)
+
         Me.Button6.TabIndex = 22
         Me.Button6.Text = "Salir"
         Me.Button6.TextAlign = System.Drawing.ContentAlignment.BottomLeft
@@ -430,13 +497,16 @@ Partial Class Menu
         '
         'TabPage3
         '
-        Me.TabPage3.Controls.Add(Me.Button7)
         Me.TabPage3.Controls.Add(Me.GroupBox2)
         Me.TabPage3.Controls.Add(Me.GroupBox1)
         Me.TabPage3.Location = New System.Drawing.Point(4, 25)
         Me.TabPage3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage3.Name = "TabPage3"
+
+        Me.TabPage3.Size = New System.Drawing.Size(798, 470)
+
         Me.TabPage3.Size = New System.Drawing.Size(767, 499)
+
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Proveedores"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -460,11 +530,17 @@ Partial Class Menu
         Me.GroupBox2.Controls.Add(Me.Button3)
         Me.GroupBox2.Controls.Add(Me.TextBox8)
         Me.GroupBox2.Controls.Add(Me.Label11)
+
+        Me.GroupBox2.Location = New System.Drawing.Point(13, 245)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(614, 210)
+
         Me.GroupBox2.Location = New System.Drawing.Point(17, 182)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Size = New System.Drawing.Size(647, 299)
+
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Ver Lista Proveedores"
@@ -508,47 +584,165 @@ Partial Class Menu
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox7)
-        Me.GroupBox1.Controls.Add(Me.MaskedTextBox2)
+        Me.GroupBox1.Controls.Add(Me.txtTel2)
+        Me.GroupBox1.Controls.Add(Me.txtTel1)
+        Me.GroupBox1.Controls.Add(Me.lblSuccess)
+        Me.GroupBox1.Controls.Add(Me.txtComentario)
+        Me.GroupBox1.Controls.Add(Me.Label26)
+        Me.GroupBox1.Controls.Add(Me.txtEmail)
+        Me.GroupBox1.Controls.Add(Me.Label24)
+        Me.GroupBox1.Controls.Add(Me.txtSitioWeb)
+        Me.GroupBox1.Controls.Add(Me.Label23)
+        Me.GroupBox1.Controls.Add(Me.Label22)
+        Me.GroupBox1.Controls.Add(Me.txtCedulaJuridica)
+        Me.GroupBox1.Controls.Add(Me.Label21)
+        Me.GroupBox1.Controls.Add(Me.btnInsertar)
+        Me.GroupBox1.Controls.Add(Me.txtDireccion)
+        Me.GroupBox1.Controls.Add(Me.txtFecha)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
+        Me.GroupBox1.Controls.Add(Me.txtPersonaContacto)
+        Me.GroupBox1.Controls.Add(Me.txtNombre)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Location = New System.Drawing.Point(17, 18)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
+
+        Me.GroupBox1.Size = New System.Drawing.Size(765, 199)
+
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Size = New System.Drawing.Size(700, 142)
+
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Agregar Proveedor"
         '
-        'TextBox7
+        'txtComentario
         '
+        Me.txtComentario.Location = New System.Drawing.Point(585, 81)
+        Me.txtComentario.Multiline = True
+        Me.txtComentario.Name = "txtComentario"
+        Me.txtComentario.Size = New System.Drawing.Size(137, 37)
+        Me.txtComentario.TabIndex = 22
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Location = New System.Drawing.Point(511, 81)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(68, 13)
+        Me.Label26.TabIndex = 21
+        Me.Label26.Text = "Comentarios:"
+        '
+        'txtEmail
+        '
+        Me.txtEmail.Location = New System.Drawing.Point(362, 90)
+        Me.txtEmail.Multiline = True
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(137, 20)
+        Me.txtEmail.TabIndex = 18
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Location = New System.Drawing.Point(248, 90)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(35, 13)
+        Me.Label24.TabIndex = 17
+        Me.Label24.Text = "Email:"
+        '
+        'txtSitioWeb
+        '
+        Me.txtSitioWeb.Location = New System.Drawing.Point(362, 57)
+        Me.txtSitioWeb.Name = "txtSitioWeb"
+        Me.txtSitioWeb.Size = New System.Drawing.Size(137, 20)
+        Me.txtSitioWeb.TabIndex = 16
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(247, 64)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(56, 13)
+        Me.Label23.TabIndex = 15
+        Me.Label23.Text = "Sitio Web:"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Location = New System.Drawing.Point(7, 127)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(61, 13)
+        Me.Label22.TabIndex = 13
+        Me.Label22.Text = "Teléfono 2:"
+        '
+
         Me.TextBox7.Location = New System.Drawing.Point(437, 74)
         Me.TextBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox7.Multiline = True
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(181, 46)
         Me.TextBox7.TabIndex = 9
+
         '
-        'MaskedTextBox2
+        Me.txtCedulaJuridica.Location = New System.Drawing.Point(108, 61)
+        Me.txtCedulaJuridica.Name = "txtCedulaJuridica"
+        Me.txtCedulaJuridica.Size = New System.Drawing.Size(116, 20)
+        Me.txtCedulaJuridica.TabIndex = 12
         '
+
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(7, 64)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(84, 13)
+        Me.Label21.TabIndex = 11
+        Me.Label21.Text = "Cedula Jurídica:"
+        '
+        'btnInsertar
+        '
+        Me.btnInsertar.Location = New System.Drawing.Point(585, 142)
+        Me.btnInsertar.Name = "btnInsertar"
+        Me.btnInsertar.Size = New System.Drawing.Size(137, 27)
+        Me.btnInsertar.TabIndex = 10
+        Me.btnInsertar.Text = "Agregar"
+        Me.btnInsertar.UseVisualStyleBackColor = True
+        '
+        'txtDireccion
+        '
+        Me.txtDireccion.Location = New System.Drawing.Point(585, 28)
+        Me.txtDireccion.Multiline = True
+        Me.txtDireccion.Name = "txtDireccion"
+        Me.txtDireccion.Size = New System.Drawing.Size(137, 38)
+        Me.txtDireccion.TabIndex = 9
+        '
+        'txtFecha
+        '
+        Me.txtFecha.Location = New System.Drawing.Point(362, 28)
+        Me.txtFecha.Mask = "00/00/0000"
+        Me.txtFecha.Name = "txtFecha"
+        Me.txtFecha.Size = New System.Drawing.Size(137, 20)
+        Me.txtFecha.TabIndex = 8
+        Me.txtFecha.ValidatingType = GetType(Date)
+
         Me.MaskedTextBox2.Location = New System.Drawing.Point(437, 39)
         Me.MaskedTextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaskedTextBox2.Name = "MaskedTextBox2"
         Me.MaskedTextBox2.Size = New System.Drawing.Size(181, 22)
         Me.MaskedTextBox2.TabIndex = 8
+
         '
         'Label10
         '
         Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(511, 31)
+
         Me.Label10.Location = New System.Drawing.Point(348, 79)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(71, 17)
         Me.Label10.TabIndex = 7
@@ -557,13 +751,19 @@ Partial Class Menu
         'Label9
         '
         Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(247, 35)
+
         Me.Label9.Location = New System.Drawing.Point(348, 43)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(51, 17)
         Me.Label9.TabIndex = 6
         Me.Label9.Text = "Fecha:"
         '
+
+        'txtPersonaContacto
+
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(147, 101)
@@ -571,9 +771,21 @@ Partial Class Menu
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(153, 22)
         Me.TextBox6.TabIndex = 5
+
         '
-        'TextBox5
+        Me.txtPersonaContacto.Location = New System.Drawing.Point(362, 120)
+        Me.txtPersonaContacto.Name = "txtPersonaContacto"
+        Me.txtPersonaContacto.Size = New System.Drawing.Size(137, 20)
+        Me.txtPersonaContacto.TabIndex = 5
         '
+
+        'txtNombre
+        '
+        Me.txtNombre.Location = New System.Drawing.Point(108, 32)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(116, 20)
+        Me.txtNombre.TabIndex = 3
+
         Me.TextBox5.Location = New System.Drawing.Point(147, 70)
         Me.TextBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox5.Name = "TextBox5"
@@ -587,12 +799,17 @@ Partial Class Menu
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(153, 22)
         Me.TextBox4.TabIndex = 3
+
         '
         'Label8
         '
         Me.Label8.AutoSize = True
+
+        Me.Label8.Location = New System.Drawing.Point(248, 123)
+
         Me.Label8.Location = New System.Drawing.Point(9, 105)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(125, 17)
         Me.Label8.TabIndex = 2
@@ -601,12 +818,18 @@ Partial Class Menu
         'Label7
         '
         Me.Label7.AutoSize = True
+
+        Me.Label7.Location = New System.Drawing.Point(7, 97)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(61, 13)
+
         Me.Label7.Location = New System.Drawing.Point(9, 74)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(68, 17)
+
         Me.Label7.TabIndex = 1
-        Me.Label7.Text = "Teléfono:"
+        Me.Label7.Text = "Teléfono 1:"
         '
         'Label6
         '
@@ -625,7 +848,10 @@ Partial Class Menu
         Me.TabPage4.Location = New System.Drawing.Point(4, 25)
         Me.TabPage4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage4.Name = "TabPage4"
+
+        Me.TabPage4.Size = New System.Drawing.Size(798, 470)
         Me.TabPage4.Size = New System.Drawing.Size(767, 499)
+
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Reportes"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -634,10 +860,16 @@ Partial Class Menu
         '
         Me.Button8.BackColor = System.Drawing.Color.DarkRed
         Me.Button8.ForeColor = System.Drawing.SystemColors.ControlLightLight
+
+        Me.Button8.Location = New System.Drawing.Point(490, 363)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(64, 23)
+
         Me.Button8.Location = New System.Drawing.Point(653, 447)
         Me.Button8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(85, 28)
+
         Me.Button8.TabIndex = 24
         Me.Button8.Text = "Salir"
         Me.Button8.TextAlign = System.Drawing.ContentAlignment.BottomLeft
@@ -659,15 +891,65 @@ Partial Class Menu
         '
         'Button4
         '
+
+        Me.Button4.Location = New System.Drawing.Point(391, 22)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+
         Me.Button4.Location = New System.Drawing.Point(521, 27)
         Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(100, 28)
+
         Me.Button4.TabIndex = 2
         Me.Button4.Text = "Buscar"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'ComboBox2
+
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(177, 22)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(160, 21)
+        Me.ComboBox2.TabIndex = 1
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(29, 31)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(110, 13)
+        Me.Label19.TabIndex = 0
+        Me.Label19.Text = "Seleccione el reporte:"
+        '
+        'lblSuccess
+        '
+        Me.lblSuccess.AutoSize = True
+        Me.lblSuccess.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblSuccess.Location = New System.Drawing.Point(362, 180)
+        Me.lblSuccess.Name = "lblSuccess"
+        Me.lblSuccess.Size = New System.Drawing.Size(152, 13)
+        Me.lblSuccess.TabIndex = 23
+        Me.lblSuccess.Text = "Dato Insertado Correctamente!"
+        Me.lblSuccess.Visible = False
+        '
+        'txtTel1
+        '
+        Me.txtTel1.Location = New System.Drawing.Point(108, 94)
+        Me.txtTel1.Mask = "0000-0000"
+        Me.txtTel1.Name = "txtTel1"
+        Me.txtTel1.Size = New System.Drawing.Size(116, 20)
+        Me.txtTel1.TabIndex = 24
+        '
+        'txtTel2
+        '
+        Me.txtTel2.Location = New System.Drawing.Point(108, 124)
+        Me.txtTel2.Mask = "0000-0000"
+        Me.txtTel2.Name = "txtTel2"
+        Me.txtTel2.Size = New System.Drawing.Size(116, 20)
+        Me.txtTel2.TabIndex = 25
+
         '
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Location = New System.Drawing.Point(236, 27)
@@ -685,12 +967,17 @@ Partial Class Menu
         Me.Label19.Size = New System.Drawing.Size(146, 17)
         Me.Label19.TabIndex = 0
         Me.Label19.Text = "Seleccione el reporte:"
+
         '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+
+        Me.ClientSize = New System.Drawing.Size(830, 520)
+
         Me.ClientSize = New System.Drawing.Size(795, 558)
+
         Me.Controls.Add(Me.TabControl1)
         Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Menu"
@@ -735,13 +1022,12 @@ Partial Class Menu
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents MaskedTextBox2 As MaskedTextBox
+    Friend WithEvents txtDireccion As TextBox
+    Friend WithEvents txtFecha As MaskedTextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtPersonaContacto As TextBox
+    Friend WithEvents txtNombre As TextBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label12 As Label
     Friend WithEvents Button3 As Button
@@ -767,6 +1053,19 @@ Partial Class Menu
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
+    Friend WithEvents Label20 As Label
+    Friend WithEvents btnInsertar As Button
+    Friend WithEvents txtCedulaJuridica As TextBox
+    Friend WithEvents Label21 As Label
+    Friend WithEvents txtSitioWeb As TextBox
+    Friend WithEvents Label23 As Label
+    Friend WithEvents Label22 As Label
+    Friend WithEvents txtEmail As TextBox
+    Friend WithEvents Label24 As Label
+    Friend WithEvents txtComentario As TextBox
+    Friend WithEvents Label26 As Label
+    Friend WithEvents lblSuccess As Label
+    Friend WithEvents txtTel2 As MaskedTextBox
+    Friend WithEvents txtTel1 As MaskedTextBox
 End Class
